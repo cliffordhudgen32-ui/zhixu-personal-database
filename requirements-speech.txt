@@ -1,0 +1,2 @@
+# Optional local speech recognition. Install explicitly; core startup does not install this file.
+faster-whisper==1.2.1

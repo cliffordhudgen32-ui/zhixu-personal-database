@@ -1,0 +1,11 @@
+.ai-followups { margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--line); }
+.ai-followups > details > summary { font-weight: 700; cursor: pointer; }
+.ai-followups .ai-followup-card { margin-top: 16px; padding: 16px; border: 1px solid var(--line); border-radius: 12px; }
+.ai-followups .ai-followup-card h3 { margin-top: 0; }
+.ai-followups [data-followup-result] { overflow-wrap: anywhere; }
+.ai-followups [data-followup-result] .pill { margin-left: 8px; }
+@media (max-width: 600px) {
+  .ai-followups .ai-followup-card { padding: 12px; }
+  .ai-followups .form-grid { grid-template-columns: minmax(0, 1fr); }
+  .ai-followups input, .ai-followups select { min-width: 0; }
+}

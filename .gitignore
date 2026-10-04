@@ -1,0 +1,41 @@
+# Runtime data and local secrets
+.env
+.env.*
+!.env.example
+config.json
+appearance.json
+ai-settings.json
+data/
+attachments/
+backups/
+exports/
+logs/
+models/
+secrets/
+capture-temp/
+*.db
+*.db-*
+*.sqlite*
+*.zip
+*.key
+*.pem
+# Environments and generated output
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.py[cod]
+dist/
+build/
+node_modules/
+# Personal documentation and illustrations
+docs/screenshots/
+docs/STORAGE_MIGRATION.md
+app/static/skins/*.jpg
+app/static/skins/*.jpeg
+app/static/skins/*.png
+app/static/skins/*.webp
+.DS_Store
+Thumbs.db

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>知序 · 个人知识与数字记忆</title>
+    <link rel="icon" href="/static/app.ico" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="stylesheet" href="/static/appearance.css" />
+    <link rel="stylesheet" href="/static/ai-review-tools.css" />
+    <link rel="stylesheet" href="/static/knowledge-answer.css" />
+    <link rel="stylesheet" href="/static/period-review.css" />
+    <link rel="stylesheet" href="/static/speech.css" />
+    <link rel="stylesheet" href="/static/capture-workspace.css" />
+    <link rel="stylesheet" href="/static/ai-followups.css" />
+    <script defer src="/static/appearance.js"></script>
+    <script defer src="/static/app.js"></script>
+    <script defer src="/static/lookups.js"></script>
+    <script defer src="/static/ai-review-tools.js"></script>
+    <script defer src="/static/ai-workflow.js"></script>
+    <script defer src="/static/knowledge-answer.js"></script>
+    <script defer src="/static/period-review.js"></script>
+    <script defer src="/static/speech.js"></script>
+    <script defer src="/static/capture-workspace.js"></script>
+    <script defer src="/static/ai-followups.js"></script>
+  </head>
+  <body>
+    <aside>
+      <a class="brand" href="#dashboard"
+        ><span class="brand-icon">知</span>
+        <div>知序 <small>PERSONAL KNOWLEDGE</small></div></a
+      >
+      <div class="workspace">● 本地个人空间 <span>离线可用</span></div>
+      <section id="maple-companion" class="maple-companion" aria-label="枫叶角色"></section>
+      <nav id="nav"></nav>
+      <footer>
+        记录，让经验生长。<br /><span>数据保存在你的电脑 · v1.1</span>
+      </footer>
+    </aside>
+    <div class="shell">
+      <header>
+        <span id="breadcrumb">我的空间 / 总览</span>
+        <form id="global-form">
+          <span>⌕</span
+          ><input
+            id="global-query"
+            placeholder="搜索记录、知识、案例、项目…"
+            aria-label="全局搜索"
+          /><kbd>Enter</kbd>
+        </form>
+        <button id="theme-button" class="icon" title="切换界面皮肤" aria-label="切换界面皮肤">🍁</button
+        ><button id="quick-button" class="primary">＋ 快速收集</button>
+      </header>
+      <main id="main"><p>正在打开你的知识空间…</p></main>
+    </div>
+    <dialog id="dialog"><div id="dialog-content"></div></dialog>
+    <div id="toast" role="status"></div>
+    <div id="appearance-panel" class="appearance-panel" hidden role="dialog" aria-modal="false" aria-labelledby="appearance-title"></div>
+    <div id="maple-atmosphere" class="maple-atmosphere" aria-hidden="true"></div>
+  </body>
+</html>

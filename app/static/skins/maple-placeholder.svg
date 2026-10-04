@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" role="img" aria-label="枫叶图案">
+<rect width="300" height="400" fill="#f7f2e9"/>
+<circle cx="150" cy="187" r="93" fill="#efdfcb"/>
+<path fill="#a95038" d="m150 99 18 50 28-24-3 44 38-3-29 35 17 18-53 11-11 39-6-39-53-11 17-18-28-35 38 3-3-44 27 24z"/>
+<path d="m150 178 3 110" stroke="#805746" stroke-width="4" fill="none"/>
+</svg>

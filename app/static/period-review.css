@@ -1,0 +1,8 @@
+.period-review-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 22px; align-items: start; }
+.period-review-grid > section { min-width: 0; }
+.period-range { padding: 12px 15px; background: var(--tint); color: var(--accent); border-radius: 7px; font-size: 13px; }
+#period-schedule-form > .ai-check { margin: 14px 0; }
+.period-draft-list { margin-top: 22px; }
+.period-review-grid .actions { flex-wrap: wrap; }
+.period-review-grid .actions a { font-size: 12px; }
+@media (max-width: 1100px) { .period-review-grid { grid-template-columns: 1fr; } }

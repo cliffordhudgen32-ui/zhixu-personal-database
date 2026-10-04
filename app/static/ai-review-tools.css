@@ -1,0 +1,30 @@
+.ai-review-toolbar { display: flex; gap: 9px; flex-wrap: wrap; margin: 14px 0 9px; align-items: center; }
+.ai-review-toolbar .muted { font-size: 11px; flex: 1; min-width: 170px; }
+.ai-review-save { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin: 13px 0; font-size: 12px; }
+.ai-review-save p { margin: 0; flex: 1; min-width: 160px; }
+.ai-review-save[data-state="saving"] { color: var(--accent); }
+.ai-review-save[data-state="failed"] { color: var(--danger); }
+.ai-review-recovery { margin-bottom: 16px; border: 1px solid var(--accent); border-radius: 7px; padding: 14px; background: var(--tint); font-size: 12px; }
+.ai-review-recovery p { margin-top: 0; }
+.ai-review-difference { margin: 15px 0; border: 1px solid var(--line); border-radius: 8px; padding: 13px; }
+.ai-review-difference .ai-diff-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.ai-diff-grid > div { min-width: 0; }
+.ai-diff-grid h3 { font-size: 12px; margin-bottom: 8px; }
+.ai-diff-text { margin: 0; background: var(--bg); border-radius: 6px; padding: 12px; white-space: pre-wrap; overflow-wrap: anywhere; font: 12px/1.9 local-sans, "Segoe UI", sans-serif; max-height: 400px; overflow-y: auto; }
+.ai-diff-removed { background: #a831281c; color: var(--text); text-decoration: underline wavy var(--danger); text-underline-offset: 3px; }
+.ai-diff-added { background: var(--tint); color: var(--text); border-bottom: 2px solid var(--accent); }
+.ai-source-located { outline: 2px solid var(--accent); outline-offset: 5px; border-radius: 5px; }
+.ai-locate-source { margin-bottom: 6px; }
+.ai-rewrite-panel { padding: 15px; margin: 14px 0; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); }
+.ai-rewrite-panel[hidden], .ai-review-save button[hidden], .ai-review-recovery[hidden] { display: none; }
+.ai-rewrite-panel h3 { margin-top: 0; font-size: 14px; }
+.ai-rewrite-panel .ai-source-text { background: var(--panel); max-height: 220px; }
+.ai-rewrite-panel input { background: var(--panel); }
+.ai-rewrite-progress { margin: 12px 0; font-size: 12px; color: var(--accent); }
+.ai-rewrite-panel .actions { flex-wrap: wrap; }
+.ai-rewrite-result { border-top: 1px solid var(--line); margin-top: 16px; padding-top: 14px; }
+@media (max-width: 700px) {
+  .ai-review-difference .ai-diff-grid { grid-template-columns: 1fr; }
+  .ai-review-toolbar button { flex: 1; }
+  .ai-review-save p { flex-basis: 100%; }
+}
