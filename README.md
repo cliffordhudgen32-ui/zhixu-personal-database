@@ -84,11 +84,15 @@ node --test tests/test_ai_review_tools.cjs tests/test_capture_workspace.cjs test
 .venv\Scripts\python.exe scripts\build_release.py --version 0.1.0-preview.5 --output dist\zhixu-0.1.0-preview.5.zip
 ```
 
-## 文档与授权状态
+## 文档与开源许可
 
 - [试用、数据迁移与分发说明](docs/DISTRIBUTION.md)
 - [产品规划](docs/ROADMAP.md)
 - [资料结构](docs/schema.md)
 - [第三方依赖与素材说明](THIRD-PARTY-NOTICES.md)
 
-项目代码许可尚待确定，仓库未附加新的代码许可证。第三方依赖、模型、品牌与素材的发布许可仍需逐项确认；源码候选版本不代表商业发行或多人网络服务已经准备完成。
+本项目自有代码以 [MIT License](LICENSE) 开源，欢迎学习、修改和贡献。第三方依赖及 Swagger UI 保留各自许可证；模型权重、个人数据与私人素材不随仓库分发。目前为源码预览版本。
+
+## 开发方式
+
+本项目由钟昌文提出个人工作生活资料管理需求，使用 Codex 辅助完成代码、界面和测试迭代。项目展示需求梳理、AI 编程工具协作与功能验证的实践，非独立手写全部代码。
